@@ -26,4 +26,11 @@ class CLTTest extends TestCase
         $this->assertEquals(25300, $this->CLT->sumSalaryYearlyBrute());
     }
 
+    public function testGetVacacy()
+    {
+        $this->CLT->setRemunerationByMonth(2300);
+
+        $this->assertEquals(2300, $this->CLT->sumValueVacacy());
+    }
+
 }

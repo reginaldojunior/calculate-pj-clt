@@ -8,5 +8,5 @@ namespace App\Service;
 
 class CLT extends ContractAbstract
 {
-
+    
 }

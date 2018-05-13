@@ -26,4 +26,9 @@ class PJTest extends TestCase
         $this->assertEquals(48000, $this->PJ->sumSalaryYearlyBrute());
     }
 
+    public function testGetVacacy()
+    {
+        $this->assertEquals(0, $this->PJ->sumValueVacacy());
+    }
+
 }
