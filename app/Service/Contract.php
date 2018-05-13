@@ -11,4 +11,6 @@ interface Contract
     
     public function sumSalaryYearlyBrute();
 
+    public function sumValueVacacy();
+
 }

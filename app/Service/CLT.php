@@ -2,28 +2,11 @@
 
 namespace App\Service;
 
-class CLT implements Contract
+/**
+ * Implements rules of contract to CLT remuneration
+ */
+
+class CLT extends ContractAbstract
 {
-
-    protected $remunerationByMonth;
-    protected $remunerationVariableByMonth;
-    protected $sumSalaryYearlyBrute;
-
-    public function setRemunerationByMonth($value)
-    {
-        $this->remunerationByMonth = $value;   
-    }
-
-    public function setRemunerationVariableByMonth($value)
-    {
-        $this->remunerationVariableByMonth = $value;
-    }
-
-    public function sumSalaryYearlyBrute()
-    {
-        $this->sumSalaryYearlyBrute = ($this->remunerationByMonth + $this->remunerationVariableByMonth) * 11;
-
-        return $this->sumSalaryYearlyBrute;
-    }
 
 }
